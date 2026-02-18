@@ -38,8 +38,11 @@ let thumbsSwiper = new Swiper(".about__slider-thumbs", {
 
 
 const swiper = new Swiper('.about__swiper', {
+  spaceBetween: 10,
   loop: true,
   slidesPerView: 1,
+  autoHeight: true,
+  // centeredSlides: true,
   pagination: {
     el: '.about-pagination',
   },
@@ -139,3 +142,31 @@ let awardsSwiper = new Swiper('.awards__swiper', {
 
 });
 
+    const tabControls = document.querySelector('.tabs-controls')
+
+    tabControls.addEventListener('click', toggleTab)
+
+    function toggleTab(e){
+
+        const tabControl = e.target.closest('.tabs-control-link')
+
+        if(!tabControl) return
+        e.preventDefault()
+        if(tabControl.classList.contains('tab-controls__link--active')) return
+
+        const tabContentID = tabControl.getAttribute('href')
+        const tabContent = document.querySelector(tabContentID)
+        const activeControl = document.querySelector('.tab-controls__link--active')
+        const activeContent = document.querySelector('.tab-content--show')
+        
+        if(activeControl){
+            activeControl.classList.remove('tab-controls__link--active')
+        }
+        if(activeContent){
+            activeContent.classList.remove('tab-content--show')
+        }
+        
+        tabControl.classList.add('tab-controls__link--active')
+        tabContent.classList.add('tab-content--show')
+        
+    }
