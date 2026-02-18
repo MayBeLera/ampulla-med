@@ -503,7 +503,7 @@ body {
 }
 .price__names-item {
   font-size: 30px;
-  line-height: 64px;
+  padding: 10px 0;
   font-weight: bold;
 }
 .composition__list {
@@ -1177,7 +1177,6 @@ body {
   /* ---------------------------------------------------------------------------- */
   .price__names-item {
     font-size: 22px;
-    line-height: 35px;
   }
   .composition__item {
     font-size: 18px;
@@ -1229,7 +1228,6 @@ body {
   }
   .price__names-item {
     font-size: 18px;
-    line-height: 30px;
   }
   .composition__item-cost p {
     font-size: 18px;
@@ -1352,5 +1350,11 @@ body {
   }
   .form__desc {
     font-size: 20px;
+  }
+  .price__names-list,
+  .composition__list,
+  .composition__list-cost {
+    display: grid;
+    grid-template-columns: 150px 0.5fr 0.5fr 0.5fr;
   }
 }
