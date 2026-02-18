@@ -512,7 +512,7 @@ body {
 .composition__item {
   font-weight: bold;
   font-size: 20px;
-  line-height: 64px;
+  padding: 10px 0;
   height: auto;
 }
 .composition__item-icon {
@@ -1181,7 +1181,6 @@ body {
   }
   .composition__item {
     font-size: 18px;
-    line-height: 50px;
   }
   .composition__item-btn {
     width: 130px;
@@ -1227,7 +1226,6 @@ body {
   }
   .composition__item {
     font-size: 15px;
-    line-height: 40px;
   }
   .price__names-item {
     font-size: 18px;
@@ -1263,8 +1261,12 @@ body {
   .logo img {
     max-width: 200px;
   }
-  .header__title{font-size: 20px;}
-  .header__contacts{font-size: 18px;}
+  .header__title {
+    font-size: 20px;
+  }
+  .header__contacts {
+    font-size: 18px;
+  }
   /* ---------------------------------------------------------------------------- */
   .information__title {
     margin: 0 auto 30px;
@@ -1306,6 +1308,13 @@ body {
   }
   .checkup__step-desc {
     font-size: 18px;
+  }
+  .price__names-item {
+    font-size: 16px;
+  }
+  .composition__item-btn {
+    width: 70px;
+    font-size: 10px;
   }
 }
 /* ---------------------------------------------------------------------------- */
