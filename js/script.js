@@ -26,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 let thumbsSwiper = new Swiper(".about__slider-thumbs", {
   spaceBetween: 10,
   slidesPerView: 4,
@@ -42,7 +40,7 @@ const swiper = new Swiper('.about__swiper', {
   loop: true,
   slidesPerView: 1,
   autoHeight: true,
-  // centeredSlides: true,
+  centeredSlides: true,
   pagination: {
     el: '.about-pagination',
   },
